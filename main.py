@@ -34,7 +34,7 @@ def prepare_data(text):
 
 
 def gather_env_var():
-    """Gather environment variables."""
+    """Gather environment variables needed to connect with the database."""
     db_name = os.environ.get("PGDATABASE")
     username = os.environ.get("PGUSER")
     userpass = os.environ.get("PGPASSWORD")

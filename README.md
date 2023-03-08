@@ -1,5 +1,5 @@
 
-# ﻿SEZNAM SCRAPER
+# ﻿SEZNAM WEBSCRAPER
 
 ## DESCRIPTION:
 
@@ -23,7 +23,7 @@ The output is twofold:
 
 2. **PostgreSQL 15**
 
-3. A PostgreSQL database created beforehand (can be empty).
+3. A local PostgreSQL database created beforehand (can be empty).
 
 ## RUNNING THE SCRIPT:
 
