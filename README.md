@@ -7,7 +7,7 @@ This project is a simple web scraper designed to collect news titles and the res
 
 The output is twofold:
 
-1. On the one hand, the data is transferred into an existing PostgreSQL database, along with automatically generated timestamps. The table is created automatically. There can be collected results of multiple requests, however, duplicated news are not allowed and are automatically discarded.
+1. On the one hand, the data is transferred into an existing local PostgreSQL database, along with automatically generated timestamps. The table is created automatically. There can be collected results of multiple requests, however, duplicated news are not allowed and are automatically discarded.
 
 2. On the other hand, the result of the last request is written down into a .txt file. In other words this is a digest reflecting a current stage of the main page, which is re-written each time we run the script. This digest contains only titles and web links, without timestamps, however, the web links are automatically shortened for better readability (using TinyURL). If the shortening of a web link fails, it is transferred to the digest unchanged. The user is informed about the number of such failures in the terminal, as well as about the overall number of titles gathered in the current digest.
 
@@ -23,7 +23,7 @@ The output is twofold:
 
 2. **PostgreSQL 15**
 
-3. A local PostgreSQL database created beforehand (can be empty).
+3. A **local** PostgreSQL database created beforehand (can be empty).
 
 ## RUNNING THE SCRIPT:
 
